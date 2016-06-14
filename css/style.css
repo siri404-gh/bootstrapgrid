@@ -78,6 +78,7 @@ nav a {
 
 .catalogue_link a, .wishlist_link a, .matches_link a, .messages_link a, .settings_link a {
   color: black;
+  text-decoration: none;
 }
 
 .catalogue_link:hover,  .wishlist_link:hover, .matches_link:hover, .messages_link:hover, .settings_link:hover {

@@ -31,12 +31,12 @@
 			    <div class="collapse navbar-collapse" id="myNavbar">
 			      <ul class="nav navbar-nav navbar-right">
 							<li><a href='#'><span class='glyphicon glyphicon-home'></span> Home</a></li>
-							<li><a href='#'><span class='glyphicon glyphicon-shopping-cart'></span> Catalogue</a></li>
-							<li><a href='#'><span class='glyphicon glyphicon-heart'></span> Wishlist</a></li>
-							<li><a href='#'><span class='glyphicon glyphicon-star'></span> Matches</a></li>
-							<li><a href='#'><span class='glyphicon glyphicon-envelope'></span> Messages</a></li>
-							<li><a href='#'><span class='glyphicon glyphicon-cog'></span> Settings</a></li>
-							<li><a href='#'><span class='glyphicon glyphicon-log-out'></span> Sign Out</a></li>
+							<li><a href='#' type="button" data-toggle="modal" data-target="#myModal"><span class='glyphicon glyphicon-shopping-cart'></span> Catalogue</a></li>
+							<li><a href='#' type="button" data-toggle="modal" data-target="#myModal"><span class='glyphicon glyphicon-heart'></span> Wishlist</a></li>
+							<li><a href='#' type="button" data-toggle="modal" data-target="#myModal"><span class='glyphicon glyphicon-star'></span> Matches</a></li>
+							<li><a href='#' type="button" data-toggle="modal" data-target="#myModal"><span class='glyphicon glyphicon-envelope'></span> Messages <span class='badge'>2</span></a></li>
+							<li><a href='#' type="button" data-toggle="modal" data-target="#myModal"><span class='glyphicon glyphicon-cog'></span> Settings</a></li>
+							<li><a href='#' type="button" data-toggle="modal" data-target="#myModal"><span class='glyphicon glyphicon-log-in'></span> Sign in</a></li>
 			      </ul>
 			    </div>
 				</nav>
@@ -85,25 +85,46 @@
 			<div class='body-sec'>
 				<div class='section col-sm-8'>
 					<h1 class='heading'>Manage your activities</h1>
-					<div class='catalogue_link col-sm-3'>
+					<div class='catalogue_link col-sm-3' type="button" data-toggle="modal" data-target="#myModal">
 						<img src='./images/trans.png'/><br>
 						<a>Catalogue</a>
 					</div>
-					<div class='wishlist_link col-sm-3'>
+					<div class='wishlist_link col-sm-3' type="button" data-toggle="modal" data-target="#myModal">
 						<img src='./images/trans.png'/><br>
 						<a>Wishlist</a>
 					</div>
-					<div class='matches_link col-sm-3'>
+					<div class='matches_link col-sm-3' type="button" data-toggle="modal" data-target="#myModal">
 						<img src='./images/trans.png'/><br>
 						<a>Matches</a>
 					</div>
-					<div class='messages_link col-sm-3'>
+					<div class='messages_link col-sm-3' type="button" data-toggle="modal" data-target="#myModal">
 						<img src='./images/trans.png'/><br>
-						<a>Messages</a>
+						<a>Messages <span class='badge'>2</span></a>
 					</div>
-					<div class='settings_link col-sm-3'>
+					<div class='settings_link col-sm-3' type="button" data-toggle="modal" data-target="#myModal">
 						<img src='./images/trans.png'/><br>
 						<a>Settings</a>
+					</div>
+
+					<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">Add to Catalogue</h4>
+					      </div>
+					      <div class="modal-body">
+					        <p>Some text in the modal.</p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+
+					  </div>
 					</div>
 				</div>
 				<div class='aside col-sm-4 sidebar'>
